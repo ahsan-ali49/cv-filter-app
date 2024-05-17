@@ -1,70 +1,64 @@
-# Getting Started with Create React App
+# Image Filter Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This application allows users to upload images and apply various filters, such as Gaussian Lowpass, \
+Butterworth Lowpass, Laplacian Highpass, and Histogram Matching. The processed image is \
+displayed alongside the original for comparison.
 
-## Available Scripts
+## Prerequisites
 
-In the project directory, you can run:
+Before you start, ensure you have the following installed:
 
-### `npm start`
+* [Node.js](https://nodejs.org/en) (v14.x or later)\
+* [Python](https://www.python.org/downloads/) (v3.8 or later)\
+* [OpenCV-Python](https://pypi.org/project/opencv-python/): For image processing functionalities\
+* [Numpy](https://numpy.org/): Required for mathematical operations in Python\
+\
+You can install the required Python libraries using pip:\
+\
+`pip install opencv-python numpy`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Installation
+### 1. Clone the Repository
+`git clone https://your-repository-url.com` \
+`cd image-filter-app`
+### 2. Install Node.js Dependencies
+Navigate to the project directory and install the required Node.js packages.\
+`npm install`
+### 3. Running the Server
+Start the Express server which handles the image processing requests.\
+`node server.js`\
+You should see the output indicating that the server is running on port 5000.
+### 4. Start the React Application
+In a new terminal window, start the frontend application.\
+`npm start`\
+This will open the web application in your default browser, typically at\
+http://localhost:3000.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Usage
+### 1. Select an Image
+Use the "Choose File" button to select an image file from your local computer.
 
-### `npm test`
+### 2. Choose a Filter
+Select the desired image filter from the dropdown menu:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* #### Lowpass Gaussian Filter (Spatial Domain)
+* #### Lowpass Butterworth Filter (Frequency Domain)
+* #### Highpass Laplacian Filter (Spatial Domain)
+* #### Histogram Matching
 
-### `npm run build`
+### 3. Apply the Filter
+Click the "Apply Filter" button to process the image. The processed image will be displayed next to the original image for comparison.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Troubleshooting
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+* ### Server Not Starting: 
+Ensure that all Python dependencies are correctly installed and that Python scripts are executable.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+* ### Image Not Processing: 
+Check the console for any errors related to file uploads or Python script execution.
 
-### `npm run eject`
+## Contributing
+Feel free to fork the repository and submit pull requests with enhancements or fixes.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## License
+Specify your licensing information here.
