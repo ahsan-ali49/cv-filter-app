@@ -8,9 +8,9 @@ displayed alongside the original for comparison.
 
 Before you start, ensure you have the following installed:
 
-* [Node.js](https://nodejs.org/en) (v14.x or later)\
-* [Python](https://www.python.org/downloads/) (v3.8 or later)\
-* [OpenCV-Python](https://pypi.org/project/opencv-python/): For image processing functionalities\
+* [Node.js](https://nodejs.org/en) (v14.x or later)
+* [Python](https://www.python.org/downloads/) (v3.8 or later)
+* [OpenCV-Python](https://pypi.org/project/opencv-python/): For image processing functionalities
 * [Numpy](https://numpy.org/): Required for mathematical operations in Python\
 \
 You can install the required Python libraries using pip:\
